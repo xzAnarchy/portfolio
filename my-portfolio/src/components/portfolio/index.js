@@ -1,13 +1,13 @@
 import iconArrow from '@/assets/iconArrow.svg';
 import React from 'react';
 
-const About = () => {
+const Portfolio = () => {
   return (
     <div className='text-slate-100 text-base flex flex-col ' id='01. About me'>
       <div className='2xl:pl-[140px] 2xl:pr-[500px] text-center md:text-left mb-4'>
         <h4 className='text-[26px] mb-10'>
-          <span className='text-[#5A79E7]'>01.</span>{' '}
-          <span className='font-semibold'>About me</span>
+          <span className='text-[#5A79E7]'>02.</span>
+          <span className='font-semibold'> Portfolio</span>
         </h4>
         <h6>
           I am a highly motivated and detail-oriented Full Stack Developer with
@@ -47,4 +47,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Portfolio;
