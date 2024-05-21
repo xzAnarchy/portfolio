@@ -3,11 +3,14 @@ import React from 'react';
 
 const Portfolio = () => {
   return (
-    <div className='text-slate-100 text-base flex flex-col ' id='01. About me'>
+    <div
+      className='text-slate-100 text-base flex flex-col mt-[150px]'
+      id='02. Portfolio'
+    >
       <div className='2xl:pl-[140px] 2xl:pr-[500px] text-center md:text-left mb-4'>
         <h4 className='text-[26px] mb-10'>
           <span className='text-[#5A79E7]'>02.</span>
-          <span className='font-semibold'> Portfolio</span>
+          <span className='font-semibold'>Some Projects I&apos;ve Built</span>
         </h4>
         <h6>
           I am a highly motivated and detail-oriented Full Stack Developer with

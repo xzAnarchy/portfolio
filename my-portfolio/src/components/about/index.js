@@ -1,4 +1,5 @@
 import iconArrow from '@/assets/iconArrow.svg';
+import Image from 'next/image';
 import React from 'react';
 
 const About = () => {
@@ -29,17 +30,38 @@ const About = () => {
 
         <div>
           <ul className='grid grid-cols-2 sm:grid-cols-4 mt-5 gap-y-3'>
-            <li>
-              <iconArrow />
+            <li className='flex'>
+              <Image src={iconArrow} alt='icon arrow' width={12} />
               Html5/Css
             </li>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>NodeJs</li>
-            <li>React</li>
-            <li>NextJs</li>
-            <li>SQL</li>
-            <li>MongoDB</li>
+            <li className='flex'>
+              <Image src={iconArrow} alt='icon arrow' width={12} />
+              JavaScript
+            </li>
+            <li className='flex'>
+              <Image src={iconArrow} alt='icon arrow' width={12} />
+              TypeScript
+            </li>
+            <li className='flex'>
+              <Image src={iconArrow} alt='icon arrow' width={12} />
+              NodeJs
+            </li>
+            <li className='flex'>
+              <Image src={iconArrow} alt='icon arrow' width={12} />
+              React
+            </li>
+            <li className='flex'>
+              <Image src={iconArrow} alt='icon arrow' width={12} />
+              NextJs
+            </li>
+            <li className='flex'>
+              <Image src={iconArrow} alt='icon arrow' width={12} />
+              SQL
+            </li>
+            <li className='flex'>
+              <Image src={iconArrow} alt='icon arrow' width={12} />
+              MongoDB
+            </li>
           </ul>
         </div>
       </div>
