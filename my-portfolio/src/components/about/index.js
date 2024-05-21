@@ -28,8 +28,8 @@ const About = () => {
           </h6>
         </div>
 
-        <div>
-          <ul className='grid grid-cols-2 sm:grid-cols-4 mt-5 gap-y-3'>
+        <div className='flex justify-left '>
+          <ul className='grid grid-cols-2 sm:grid-cols-4 mt-5 gap-6 '>
             <li className='flex'>
               <Image src={iconArrow} alt='icon arrow' width={12} />
               Html5/Css
