@@ -1,7 +1,29 @@
 import iconArrow from '@/assets/iconArrow.svg';
+import logoAF from '@/assets/logoAF.svg';
+import logoEbc from '@/assets/logoEbc.svg';
+import logoYV from '@/assets/logoYV.svg';
 import React from 'react';
+import { CardDefault } from '../cards';
 
 const Portfolio = () => {
+  const Data = [
+    {
+      title: 'El Buen Conejo',
+      body: 'My second project in the selection process of NoCountry, involved working as a Frontend Developer once again with ReactJs. This time, it wasnt an e-commerce project, but rather a marketplace related to Cuniculture.',
+      image: logoEbc,
+    },
+    {
+      title: 'Al Forno',
+      body: 'My first project in the NoCountry Simulation was working as a FullStack Developer. The project entailed creating an e-commerce platform using ReactJS and PHP, which was supported by a MySQL relational database.',
+      image: logoAF,
+    },
+    {
+      title: 'Yummyverse',
+      body: 'The objective of this project is to develop a platform that allows to visualize and manage in an organized way a list of restaurants and their main menus. Register to save your favorites information and order history. Also to register your own restaurant, publish menus and customize your space according to your membership.',
+      image: logoYV,
+    },
+  ];
+
   return (
     <div
       className='text-slate-100 text-base flex flex-col mt-[150px]'
@@ -12,39 +34,17 @@ const Portfolio = () => {
           <span className='text-[#5A79E7]'>02.</span>
           <span className='font-semibold'>Some Projects I&apos;ve Built</span>
         </h4>
-        <h6>
-          I am a highly motivated and detail-oriented Full Stack Developer with
-          a degree from Coderhouse. My expertise lies in both front-end and
-          back-end development, with a strong emphasis on delivering
-          high-quality, efficient, and scalable web applications. I excel in
-          active listening, conflict resolution, and maintaining meticulous
-          attention to detail, enabling me to collaborate effectively with team
-          members and clients.
-        </h6>
       </div>
 
-      <div className='flex flex-col 2xl:pl-[140px] xl:pr-[500px] text-center md:text-left '>
-        <div>
-          <h6>
-            Here are a few technologies I&apos;ve been working with recently:
-          </h6>
-        </div>
-
-        <div>
-          <ul className='grid grid-cols-2 sm:grid-cols-4 mt-5 gap-y-3'>
-            <li>
-              <iconArrow />
-              Html5/Css
-            </li>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>NodeJs</li>
-            <li>React</li>
-            <li>NextJs</li>
-            <li>SQL</li>
-            <li>MongoDB</li>
-          </ul>
-        </div>
+      <div className='grid grid-cols-2 2xl:pl-[140px]'>
+        {Data.map((item, index) => (
+          <CardDefault
+            key={index}
+            image={item.image}
+            title={item.title}
+            body={item.body}
+          />
+        ))}
       </div>
     </div>
   );
