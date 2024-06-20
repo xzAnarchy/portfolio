@@ -4,15 +4,18 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className='text-slate-100 text-base flex flex-col ' id='01. About me'>
-      <div className='2xl:pl-[140px] 2xl:pr-[500px] text-center md:text-left mb-4'>
+    <div
+      className='text-slate-100 text-base flex flex-col transition ease-in-out'
+      id='01. About me'
+    >
+      <div className='2xl:pl-[140px] 2xl:pr-[500px] text-center md:text-left mb-4 '>
         <h4 className='text-[26px] mb-10'>
           <span className='text-[#5A79E7]'>01.</span>{' '}
           <span className='font-semibold'>About me</span>
         </h4>
         <h6>
-          I am a highly motivated and detail-oriented Full Stack Developer with
-          a degree from Coderhouse. My expertise lies in both front-end and
+          I&apos;am a highly motivated and detail-oriented Full Stack Developer
+          with a degree from Coderhouse. My expertise lies in both front-end and
           back-end development, with a strong emphasis on delivering
           high-quality, efficient, and scalable web applications. I excel in
           active listening, conflict resolution, and maintaining meticulous
