@@ -1,6 +1,6 @@
 import iconArrow from '@/assets/iconArrow.svg';
 import logoAF from '@/assets/logoAF.svg';
-import logoEbc from '@/assets/logoEbc.svg';
+import logoEBC from '@/assets/logoEBC.svg';
 import logoYV from '@/assets/logoYV.svg';
 import React from 'react';
 import { CardDefault } from '../cards';
@@ -10,7 +10,7 @@ const Portfolio = () => {
     {
       title: 'El Buen Conejo',
       body: 'My second project in the selection process of NoCountry, involved working as a Frontend Developer once again with ReactJs. This time, it wasnt an e-commerce project, but rather a marketplace related to Cuniculture.',
-      image: logoEbc,
+      image: logoEBC,
       repo: 'https://github.com/No-Country/s11-17-n-python-react',
     },
     {
